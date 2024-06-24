@@ -49,6 +49,9 @@
 .Header {
 	height: 10vh;
 	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
 }
 .AboutRightContent img {
 	width: 100%;
@@ -56,6 +59,7 @@
 	border-radius: 10px;
 	filter: saturate(150%);
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	object-fit: cover;
 }
 .BottomContent p {
 	margin-top: 0;

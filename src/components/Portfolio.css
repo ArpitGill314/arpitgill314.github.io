@@ -1,5 +1,4 @@
 .Portfolio {
-	height: 110vh;
 	padding-top: 10vh;
 	display: flex;
 	flex-direction: row;
@@ -7,5 +6,11 @@
 }
 .PortfolioContents {
 	width: 80vw;
-	background-color: red;
+	margin-bottom: 5vh;
+}
+.PortfolioContents * {
+	margin-top: 1%;
+}
+.shifted {
+	margin-left: 20px;
 }

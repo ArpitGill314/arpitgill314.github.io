@@ -15,26 +15,30 @@ const About = () => {
         </div>
         <div className="AboutMiddleSpacer"></div>
         <div className="AboutRightContent">
-					<img src="/ProfilePicture.jpeg" alt="Arpit Gill's beautiful face" id="profilepic"/>
-				</div>
+          <img
+            src="/ProfilePicture.jpeg"
+            alt="Arpit Gill's beautiful face"
+            id="profilepic"
+          />
+        </div>
       </div>
-			<div className="Header">
-				<h1>idkk</h1>
-			</div>
-			<div className="BottomContent">
-				<div className="BottomItem" id="about1">
-					<img src="/AboutPic1.jpeg" id="aboutpic1" alt="Me and my family" />
-					<p>Celebrating my dad's birthday with my family</p>
-				</div>
-				<div className="BottomItem" id="about2">
-					<img src="/AboutPic2.jpeg" id="aboutpic2" alt="Me and my friends" />
-					<p>At an event with my friends</p>
-				</div>
-				<div className="BottomItem" id="about3">
-					<img src="/AboutPic3.jpeg" id="aboutpic3" alt="Me and my friend" />
-					<p>Getting gains with my friend</p>
-				</div>
-			</div>
+      <div className="Header">
+        <h2>Here's me...</h2>
+      </div>
+      <div className="BottomContent">
+        <div className="BottomItem" id="about1">
+          <p>Celebrating my dad's birthday with my family</p>
+          <img src="/AboutPic1.jpeg" id="aboutpic1" alt="Me and my family" />
+        </div>
+        <div className="BottomItem" id="about2">
+          <p>At an event with my friends</p>
+          <img src="/AboutPic2.jpeg" id="aboutpic2" alt="Me and my friends" />
+        </div>
+        <div className="BottomItem" id="about3">
+          <p>Getting gains with my friend</p>
+          <img src="/AboutPic3.jpeg" id="aboutpic3" alt="Me and my friend" />
+        </div>
+      </div>
     </div>
   );
 };

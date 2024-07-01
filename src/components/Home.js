@@ -49,7 +49,12 @@ const Home = () => {
           </div>
         </div>
         <div className="middleSpacer"></div>
-        <div className="rightContent"></div>
+        <div className="rightContent">
+        <img
+            src="/ProfilePicture.jpeg"
+            alt="Arpit Gill's beautiful face"
+          />
+        </div>
       </div>
     </div>
   );

@@ -45,3 +45,9 @@
 .Navbar button:active {
 	background-color: cornflowerblue;
 }
+@media (max-width: 340px) {
+  .Navbar button {
+    margin: 5px;
+    font-size: 15px;
+  }
+}

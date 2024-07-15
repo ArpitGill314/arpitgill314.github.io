@@ -24,14 +24,14 @@
 	height: 100%;
 	width: 45%;
 	display: flex;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
 }
 .rightContent img {
 	height: auto;
-	width: 100%;
+	width: 90%;
 	border-image: linear-gradient(cornflowerblue, lightblue) 1;
-	border-width: 5px;
+	border-width: 3px;
 	border-style: solid;
 }
 .middleSpacer {

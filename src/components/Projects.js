@@ -10,11 +10,13 @@ const Projects = () => {
         </div>
         <div className="ProjectsContainer">
           <div className="Project">
-            <div className="ProjectImage"></div>
+            <div className="ProjectImage">
+              <img src="/ProjectPic1.jpg" alt="Home Page of the portfolio website" />
+            </div>
             <div className="ProjectDetails">
               <h2>Portfolio Website</h2>
               <p>
-                A simple front-end only page made with React.js to display my
+                A simple front-end only page made with <b>React</b> to display my
                 projects and more information about me.
               </p>
               <div className="projectbuttons">

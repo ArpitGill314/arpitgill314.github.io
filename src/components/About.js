@@ -7,10 +7,13 @@ const About = () => {
         <div className="AboutLeftContent">
           <h1>About me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            ad perspiciatis ullam qui nam odio deleniti dolorem excepturi nisi,
-            veritatis eum nostrum nesciunt voluptatibus eaque architecto
-            exercitationem, soluta unde labore.
+            I'm a computer science student at the University of Cincinnati with
+            an interest in software development and artifical intelligence. I'm
+            actively working on honing my skills such as Python, Javascript, and
+            React and expanding my skillset with other technologies. I look
+            forward to potentially applying my skills at a co-op during the fall
+            2024 season. In my free time, I enjoy relaxing with my friends and
+            family.
           </p>
         </div>
         <div className="AboutMiddleSpacer"></div>

@@ -5,8 +5,8 @@ const Portfolio = () => {
   <div className="Portfolio">
     <div className="PortfolioContents">
       <h1>Portfolio Website</h1>
-      <p>Finished: 6/24/24</p>
-      <p>Last updated: 6/24/24</p>
+      <p>Finished: 7/15/24</p>
+      <p>Last updated: 7/15/24</p>
       <h2>Project Overview</h2>
       <div className="shifted">
         <h3>Description</h3>

@@ -9,10 +9,10 @@ const Home = () => {
           <h1>My name is</h1>
           <h1>Arpit Gill.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-            minima porro accusantium praesentium molestias temporibus
-            distinctio, quae, veritatis, odit quis saepe laudantium. Accusantium
-            facilis illum atque illo, ad veritatis repellat.
+            I'm a passionate Computer Science student interested in software
+            development. I'm currently seeking a fall 2024 co-op to apply my
+            skills and gain more experience. Learn more about me and my projects
+            below.
           </p>
           <div className="socials">
             <a href="https://www.linkedin.com/in/arpitgill/">
@@ -50,10 +50,7 @@ const Home = () => {
         </div>
         <div className="middleSpacer"></div>
         <div className="rightContent">
-        <img
-            src="/ProfilePicture.jpeg"
-            alt="Arpit Gill's beautiful face"
-          />
+          <img src="/HomePic1.jpeg" alt="Arpit Gill's beautiful face" />
         </div>
       </div>
     </div>

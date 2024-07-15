@@ -60,7 +60,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  filter: saturate(150%);
+  filter: saturate(120%);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   object-fit: cover;
 }

@@ -124,3 +124,8 @@ i {
 		border: none;
 	}
 }
+@media (max-height: 590px) {
+	.homeContent {
+		padding-top: 10vh;
+	}
+}

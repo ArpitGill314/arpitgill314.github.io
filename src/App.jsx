@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
+import LandingPage from "./pages/LandingPage";
+import NavBar from "./components/NavBar";
+
 export default function App() {
 	const [init, setInit] = useState(false);
 
@@ -17,15 +20,18 @@ export default function App() {
 	// Particle options
 	const particlesOptions = useMemo(
 		() => ({
-			background: {
-				color: "#000000",
-			},
+			background: { color: "#001f33" },
 			particles: {
-				number: { value: 60 },
-				color: { value: "#ffffff" },
-				size: { value: 3 },
-				move: { enable: true, speed: 1 },
-				links: { enable: true, color: "#ffffff" },
+				number: { value: 80 },
+				color: { value: "#6efff7" },
+				shape: { type: "circle" },
+				size: { value: { min: 2, max: 6 } },
+				opacity: { value: 0.6 },
+				move: { enable: true, speed: 0.7, direction: "top", outModes: "out" },
+			},
+			interactivity: {
+				events: { onHover: { enable: true, mode: "bubble" } },
+				modes: { bubble: { distance: 150, size: 15, duration: 3, opacity: 1 } },
 			},
 		}),
 		[]
@@ -41,13 +47,8 @@ export default function App() {
 				/>
 			)}
 
-			<div className="relative text-center text-white">
-				<h1 className="text-5xl font-bold mb-4">Hi, I'm Arpit</h1>
-				<p className="text-xl mb-6">I'm a programmer</p>
-				<button className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:scale-105 transition">
-					View My Work
-				</button>
-			</div>
+			<NavBar />
+			<LandingPage />
 		</div>
 	);
 }

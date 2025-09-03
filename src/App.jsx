@@ -20,18 +20,21 @@ export default function App() {
 	// Particle options
 	const particlesOptions = useMemo(
 		() => ({
-			background: { color: "#001f33" },
+			background: { color: "#000000" },
 			particles: {
-				number: { value: 80 },
-				color: { value: "#6efff7" },
+				number: { value: 120 },
+				color: { value: ["#344CB7", "#d65db1", "#7649fe"] },
 				shape: { type: "circle" },
-				size: { value: { min: 2, max: 6 } },
-				opacity: { value: 0.6 },
-				move: { enable: true, speed: 0.7, direction: "top", outModes: "out" },
+				size: { value: { min: 2, max: 7 } },
+				opacity: { value: 0.8 },
+				move: { enable: true, speed: 0.6 },
+				links: { enable: true, color: "#ffffff", opacity: 0.3 },
 			},
 			interactivity: {
-				events: { onHover: { enable: true, mode: "bubble" } },
-				modes: { bubble: { distance: 150, size: 15, duration: 3, opacity: 1 } },
+				events: { onHover: { enable: true, mode: "grab" } },
+				modes: {
+					grab: { distance: 130, links: { opacity: 0.9, color: "#d65db1" } },
+				},
 			},
 		}),
 		[]

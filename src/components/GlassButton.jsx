@@ -1,12 +1,15 @@
-export default function GlassButton({ children, onClick }) {
+import clsx from "clsx";
+
+export default function GlassButton({ children, onClick, circular = false }) {
 	return (
 		<button
 			onClick={onClick}
-			className={`
-        px-6 py-3 rounded-full text-white font-semibold
-        bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg
-        hover:bg-white/20 transition duration-300
-      `}
+			className={clsx(
+				"h-12 bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg z-50 text-white font-semibold hover:bg-white/20 transition duration-300",
+				circular
+					? "w-12 h-12 flex items-center justify-center rounded-full"
+					: "px-5 rounded-full"
+			)}
 		>
 			{children}
 		</button>

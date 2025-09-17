@@ -1,7 +1,10 @@
-export default function NavBarButton({ children }) {
+export default function NavBarButton({ children, href }) {
 	return (
-		<button className="px-5 h-12 rounded-full hover:bg-white/10 transition duration-300">
+		<a
+			href={href}
+			className="px-6 h-14 text-lg font-semibold rounded-full hover:bg-white/15 transition duration-300 flex items-center justify-center"
+		>
 			{children}
-		</button>
+		</a>
 	);
 }

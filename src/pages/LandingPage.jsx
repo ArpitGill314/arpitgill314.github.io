@@ -3,7 +3,10 @@ import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
 
 export default function LandingPage() {
 	return (
-		<div className="relative min-h-screen flex items-center justify-center">
+		<section
+			id="home"
+			className="min-h-screen flex items-center justify-center px-6 py-20"
+		>
 			<div className="relative text-center text-white z-10">
 				<h1 className="text-5xl font-bold mb-4">Hi, I'm Arpit</h1>
 				<p className="text-xl mb-6">Text TBD</p>
@@ -17,6 +20,6 @@ export default function LandingPage() {
 					</GlassButton>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

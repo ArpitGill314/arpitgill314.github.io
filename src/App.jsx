@@ -2,8 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-import LandingPage from "./pages/LandingPage";
 import NavBar from "./components/NavBar";
+import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
 
 export default function App() {
 	const [init, setInit] = useState(false);
@@ -33,7 +34,7 @@ export default function App() {
 			interactivity: {
 				events: { onHover: { enable: true, mode: "grab" } },
 				modes: {
-					grab: { distance: 130, links: { opacity: 0.9, color: "#d65db1" } },
+					grab: { distance: 150, links: { opacity: 0.9, color: "#d65db1" } },
 				},
 			},
 		}),
@@ -41,17 +42,19 @@ export default function App() {
 	);
 
 	return (
-		<div className="relative min-h-screen flex items-center justify-center">
+		<div className="relative min-h-screen text-white">
+			{/* Particles background */}
 			{init && (
 				<Particles
 					id="tsparticles"
-					className="absolute inset-0"
+					className="absolute inset-0 -z-10"
 					options={particlesOptions}
 				/>
 			)}
 
 			<NavBar />
 			<LandingPage />
+			<AboutPage />
 		</div>
 	);
 }

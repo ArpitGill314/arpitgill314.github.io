@@ -5,6 +5,8 @@ import { loadSlim } from "@tsparticles/slim";
 import NavBar from "./components/NavBar";
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ExperiencePage from "./pages/ExperiencePage";
 
 export default function App() {
 	const [init, setInit] = useState(false);
@@ -43,7 +45,6 @@ export default function App() {
 
 	return (
 		<div className="relative min-h-screen text-white">
-			{/* Particles background */}
 			{init && (
 				<Particles
 					id="tsparticles"
@@ -55,6 +56,8 @@ export default function App() {
 			<NavBar />
 			<LandingPage />
 			<AboutPage />
+			<ExperiencePage />
+			<ProjectsPage />
 		</div>
 	);
 }

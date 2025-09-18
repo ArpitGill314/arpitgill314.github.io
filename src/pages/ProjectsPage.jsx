@@ -75,7 +75,7 @@ export default function ProjectsPage() {
 
 			{/* Modal */}
 			{modalOpen && (
-				<div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+				<div className="fixed inset-0 bg-black/10 backdrop-blur-md flex items-center justify-center z-50">
 					<div className="bg-white/10 border border-white/20 rounded-[45px] shadow-lg p-6 text-center max-w-xs flex flex-col justify-center">
 						<h3 className="text-xl font-bold mb-4">Hold Your Horses!</h3>
 						<p className="text-gray-300 mb-6">

@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ExperiencePage from "./pages/ExperiencePage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
 	const [init, setInit] = useState(false);
@@ -58,6 +59,7 @@ export default function App() {
 			<AboutPage />
 			<ExperiencePage />
 			<ProjectsPage />
+			<ContactPage />
 		</div>
 	);
 }

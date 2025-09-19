@@ -15,10 +15,11 @@ export default function ProjectsPage() {
 		},
 		{
 			title: "Portfolio Website",
-			description: "My second personal website, this time with a clean and glassy look.",
+			description:
+				"My second personal website, this time with a clean and glassy look.",
 			time: "September 2025",
 			tech: ["React", "Tailwind CSS"],
-			link: "https://github.com/ArpitGill314/portfolio-website",
+			link: "https://github.com/ArpitGill314/arpitgill314.github.io",
 		},
 		{
 			title: "Lego EV3 Robot",
@@ -92,7 +93,9 @@ export default function ProjectsPage() {
 			{modalOpen && (
 				<div className="fixed inset-0 bg-black/10 backdrop-blur-md flex items-center justify-center z-50">
 					<div className="bg-white/10 border border-white/20 rounded-[45px] p-6 text-center max-w-xs flex flex-col justify-center">
-						<h3 className="text-xl font-bold mb-4 text-white">Hold Your Horses!</h3>
+						<h3 className="text-xl font-bold mb-4 text-white">
+							Hold Your Horses!
+						</h3>
 						<p className="text-gray-300 mb-6">
 							This project isn't available on GitHub just yet, please check back
 							later!

@@ -11,9 +11,9 @@ export default function ContactPage() {
 	return (
 		<section
 			id="contact"
-			className="flex items-center justify-center px-6 py-10"
+			className="flex items-center justify-center px-6 py-20"
 		>
-			<div className="p-10 text-white max-w-3xl text-center flex flex-col items-center w-full">
+			<div className="p-10 text-white max-w-3xl text-center flex flex-col items-center w-full z-10">
 				<h2 className="text-4xl font-bold mb-4">Contact Me</h2>
 				<p className="text-lg text-white mb-2">
 					Feel free to reach out through any of the options below!

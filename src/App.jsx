@@ -24,7 +24,7 @@ export default function App() {
 	// Particle options
 	const particlesOptions = useMemo(
 		() => ({
-			background: { color: "#000000" },
+			background: { color: "transparent" },
 			particles: {
 				number: { value: 120 },
 				color: { value: ["#344CB7", "#d65db1", "#7649fe"] },
@@ -45,11 +45,12 @@ export default function App() {
 	);
 
 	return (
-		<div className="relative min-h-screen text-white">
+		<div className="relative min-h-screen">
+			<div className="absolute inset-0 -z-20 bg-gradient-to-b from-purple-800 to-indigo-800"></div>
 			{init && (
 				<Particles
 					id="tsparticles"
-					className="absolute inset-0 -z-10"
+					className="absolute inset-0 -z-10 hidden md:block"
 					options={particlesOptions}
 				/>
 			)}

@@ -1,3 +1,5 @@
+import GlassButton from "../components/GlassButton";
+
 export default function AboutPage() {
 	const details = [
 		{
@@ -15,22 +17,33 @@ export default function AboutPage() {
 	];
 
 	return (
-		<section id="about" className="flex items-center justify-center px-6 py-10">
+		<section id="about" className="flex items-center justify-center px-6 py-20">
 			<div className="p-10 text-white max-w-6xl text-center flex items-center flex-col w-full">
 				<h2 className="text-4xl font-bold mb-6">About Me</h2>
 
-				<p className="text-lg leading-relaxed mb-6">
-					Hi! I'm <span className="font-semibold">Arpit Gill</span>, I
-					<span className="text-indigo-300"> do stuff</span>,
-					<span className="text-pink-300"> and other stuff</span>, and I'm just
-					filling space for now.
+				<p className="text-lg leading-relaxed mb-6 max-w-3xl">
+					I'm <span className="font-semibold">Arpit</span>, a computer science
+					student at the University of Cincinnati. I enjoy making websites with
+					<span className="text-indigo-300"> React</span> and solving problems
+					with
+					<span className="text-pink-300"> Python</span>. I love tackling
+					complex problems and writing clean code while doing it. When I'm not
+					coding, you can find me playing video games, watching TV, or playing
+					some sports. I'm currently looking to apply my skills at an internship
+					in the spring 2026 semester.
 				</p>
+
+				<div className="mb-6">
+					<GlassButton href={"/Gill_Arpit_Resume_2025.pdf"}>
+						View resume
+					</GlassButton>
+				</div>
 
 				<div className="grid grid-cols-1 gap-6 w-full max-w-2xl">
 					{details.map((det, i) => (
 						<div
 							key={i}
-							className="bg-white/10 border border-white/20 backdrop-blur-sm hover:bg-white/20
+							className="bg-white/10 border border-white/20 backdrop-blur-[8px] hover:bg-white/20
         rounded-[30px] shadow-md p-6 hover:border-white/30 transition duration-300 flex flex-col"
 						>
 							<h3 className="text-lg font-bold">{det.section}</h3>

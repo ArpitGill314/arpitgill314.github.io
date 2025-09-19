@@ -9,7 +9,7 @@ export default function GlassButton({
 	a_tag = true,
 }) {
 	const css =
-		"h-14 text-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/30 shadow-lg z-50 text-white font-medium hover:bg-white/20 transition duration-300 flex items-center justify-center active:bg-white/40";
+		"h-14 text-lg bg-white/10 backdrop-blur-[8px] border border-white/20 hover:border-white/30 shadow-lg z-50 text-white font-medium hover:bg-white/20 transition duration-300 flex items-center justify-center active:bg-white/40";
 	if (a_tag) {
 		return (
 			<a

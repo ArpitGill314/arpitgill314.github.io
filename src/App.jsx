@@ -46,7 +46,7 @@ export default function App() {
 
 	return (
 		<div className="relative min-h-screen">
-			<div className="absolute inset-0 -z-20 bg-gradient-to-b from-purple-800 to-indigo-800"></div>
+			<div className="absolute inset-0 -z-20 bg-[linear-gradient(to_bottom,black,indigo,midnightblue,black)]"></div>
 			{init && (
 				<Particles
 					id="tsparticles"

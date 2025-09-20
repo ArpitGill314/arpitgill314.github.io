@@ -1,9 +1,6 @@
-import { useState } from "react";
 import GlassButton from "../components/GlassButton";
 
 export default function ProjectsPage() {
-	const [modalOpen, setModalOpen] = useState(false);
-
 	const projects = [
 		{
 			title: "Multiplayer Games Website",
@@ -34,8 +31,6 @@ export default function ProjectsPage() {
 	const handleClick = (link) => {
 		if (link) {
 			window.open(link, "_blank");
-		} else {
-			setModalOpen(true);
 		}
 	};
 
@@ -48,7 +43,7 @@ export default function ProjectsPage() {
 				<h2 className="text-4xl font-bold mb-6">Projects</h2>
 
 				<p className="text-lg leading-relaxed mb-6 max-w-3xl">
-					Click on each project to view more information on GitHub!
+					Click on each project to view more information on GitHub (if available).
 				</p>
 
 				<div className="grid grid-cols-1 gap-6 w-full">
@@ -76,36 +71,25 @@ export default function ProjectsPage() {
 							</div>
 
 							{/* Tooltip */}
-							{proj.link && (
+							{proj.link ? (
 								<div
-									className="absolute -top-[21px] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100
+									className="absolute -top-[21px] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 group-hover:opacity-100
                   transition bg-transparent text-white text-xs px-2 py-0 rounded-full pointer-events-none"
 								>
 									View on GitHub
+								</div>
+							) : (
+								<div
+									className="absolute -top-[21px] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 group-hover:opacity-100
+                  transition bg-transparent text-white text-xs px-2 py-0 rounded-full pointer-events-none"
+								>
+									Not on GitHub yet
 								</div>
 							)}
 						</div>
 					))}
 				</div>
 			</div>
-
-			{/* Modal */}
-			{modalOpen && (
-				<div className="fixed inset-0 bg-black/10 backdrop-blur-md flex items-center justify-center z-50">
-					<div className="bg-white/10 border border-white/20 rounded-[45px] p-6 text-center max-w-xs flex flex-col justify-center">
-						<h3 className="text-xl font-bold mb-4 text-white">
-							Hold Your Horses!
-						</h3>
-						<p className="text-gray-300 mb-6">
-							This project isn't available on GitHub just yet, please check back
-							later!
-						</p>
-						<GlassButton onClick={() => setModalOpen(false)} a_tag={false}>
-							Close
-						</GlassButton>
-					</div>
-				</div>
-			)}
 		</section>
 	);
 }

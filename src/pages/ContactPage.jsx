@@ -1,7 +1,8 @@
 import GlassButton from "../components/GlassButton";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandGithubFilled } from "react-icons/tb";
 
 export default function ContactPage() {
 	const copyToClipboard = async (text) => {
@@ -54,7 +55,7 @@ export default function ContactPage() {
 						href={"https://github.com/ArpitGill314"}
 						title={"GitHub"}
 					>
-						<FaGithubAlt size={25} />
+						<TbBrandGithubFilled size={25} />
 					</GlassButton>
 				</div>
 			</div>

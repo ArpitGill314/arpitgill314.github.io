@@ -1,5 +1,6 @@
 import GlassButton from "../components/GlassButton";
-import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandGithubFilled } from "react-icons/tb";
 
 export default function LandingPage() {
 	return (
@@ -30,7 +31,7 @@ export default function LandingPage() {
 						href={"https://github.com/ArpitGill314"}
 						title={"GitHub"}
 					>
-						<FaGithubAlt size={25} />
+						<TbBrandGithubFilled size={25} />
 					</GlassButton>
 				</div>
 			</div>

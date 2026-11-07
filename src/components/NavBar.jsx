@@ -10,7 +10,7 @@ export default function NavBar() {
 		>
 			<NavBarButton href={"#home"}>Home</NavBarButton>
 			<NavBarButton href={"#about"}>About</NavBarButton>
-            <NavBarButton href={"#projects"}>Projects</NavBarButton>
+            <NavBarButton href={"#experience"}>Experience</NavBarButton>
             <NavBarButton href={"#contact"}>Contact</NavBarButton>
 		</nav>
 	);

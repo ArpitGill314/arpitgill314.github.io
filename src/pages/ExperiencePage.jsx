@@ -1,6 +1,12 @@
 export default function ExperiencePage() {
 	const details = [
 		{
+			title: "Software Developer Co-op (DevOps)",
+			company: "NLign Analytics",
+			period: "Jan 2026 - May 2026, Aug 2026 - Present",
+			highlights: ["Jenkins CI/CD", "SQL Server/Oracle", "C++/Java"],
+		},
+		{
 			title: "Backend SWE Intern",
 			company: "Tenet3",
 			period: "May 2025 - Aug 2025",
@@ -21,7 +27,7 @@ export default function ExperiencePage() {
 	];
 
 	return (
-		<section id="about" className="flex items-center justify-center px-6 py-20">
+		<section id="experience" className="flex items-center justify-center px-6 py-20">
 			<div className="p-10 text-white max-w-6xl text-center flex items-center flex-col w-full">
 				<h2 className="text-4xl font-bold mb-6">Experience</h2>
 

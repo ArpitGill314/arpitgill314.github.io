@@ -16,7 +16,7 @@ export default function LandingPage() {
 						Arpit Gill
 					</span>
 				</h1>
-				<p className="text-xl mb-6">Full-Stack Developer</p>
+				<p className="text-xl mb-6">Software Developer</p>
 				<div className="flex justify-center gap-3">
 					<GlassButton href={"#about"}>View More</GlassButton>
 					<GlassButton

@@ -4,15 +4,19 @@ export default function AboutPage() {
 	const details = [
 		{
 			section: "Languages",
-			items: ["JavaScript", "Python", "C++"],
+			items: ["Python", "C++", "C", "Java", "JavaScript", "SQL"],
 		},
 		{
-			section: "Frameworks / Libraries",
-			items: ["React", "Node.js", "Express.js"],
+			section: "Frameworks & Development",
+			items: ["React", "Django", "Node.js", "REST APIs", "WebSockets"],
 		},
 		{
-			section: "Skills",
-			items: ["Web development", "Backend engineering", "Data analysis"],
+			section: "DevOps & Tools",
+			items: ["Jenkins", "Docker", "GitLab CI/CD", "MSBuild", "Trivy", "Git"],
+		},
+		{
+			section: "Databases & Platforms",
+			items: ["Oracle", "SQL Server", "SQLite", "Linux", "Windows", "macOS"],
 		},
 	];
 
@@ -23,18 +27,21 @@ export default function AboutPage() {
 
 				<p className="text-lg leading-relaxed mb-6 max-w-3xl">
 					I'm <span className="font-semibold">Arpit</span>, a computer science
-					student at the University of Cincinnati. I enjoy making websites with
-					<span className="text-indigo-300"> React</span> and solving problems
-					with
-					<span className="text-pink-300"> Python</span>. I love tackling
-					complex problems and writing clean code while doing it. When I'm not
-					coding, you can find me playing video games, watching TV, or playing
-					some sports. I'm currently looking to apply my skills at an internship
-					in the spring 2026 semester.
+					student at the University of Cincinnati with a passion for
+					software development and problem-solving. I've worked across
+					backend development, CI/CD automation, and software infrastructure,
+					using technologies like
+					<span className="font-semibold"> Python</span>,
+					<span className="font-semibold"> C++</span>, and
+					<span className="font-semibold"> Docker</span>.
+					I enjoy tackling complex technical challenges, improving
+					development workflows, and building reliable software.
+					Outside of coding, you can find me playing video games,
+					watching TV, or playing sports.
 				</p>
 
 				<div className="mb-6">
-					<GlassButton href={"/Gill_Arpit_Resume_2025.pdf"}>
+					<GlassButton href={"/Gill_Arpit_Resume_2026.pdf"}>
 						View resume
 					</GlassButton>
 				</div>
